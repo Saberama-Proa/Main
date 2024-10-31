@@ -1,75 +1,124 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styleMat.css"/>
-    <link rel="stylesheet" href="css/styleNavLateral.css"> <!-- Navbar lateral-->
-    <title>Matemática</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/styleNavLateral.css"> <!-- Navbar lateral-->
+  <link rel="stylesheet" href="css/styleMateria.css">
+  <title>Materias</title>
 </head>
+
 <body>
+  <aside class="sidebar">
+    <div>
+      <img id="Logo" src="img/Logo Saberama navbarlateral.png" alt="Um Joystick com letras embaixo escrito Saberama">
+    </div>
+    <nav class="nav-links">
+        <a href="materia.html">
+            <img  src="img/Icones direto do figma/livros 1.png" alt="">
+            <span>Materias</span>
+        </a>
+        <a href="#Missao">
+            <img " src="img/Icones direto do figma/Alvo.png" alt="">
+            <span>Missões</span>
+        </a>
+        <a href="sons.html">
+            <img  src="img/Icones direto do figma/Boca.png" alt="">
+            <span>Sons</span>
+        </a>
+        <a href="perfil.html">
+            <img  src="img/Icones direto do figma/Perfil.png" alt="">
+            <span>Perfil</span>
+        </a>
+        <a href="#Ajustes">
+            <img src="img/Icones direto do figma/engrenagem.png" alt="">
+            <span>Ajustes</span>
+        </a>
+    </nav>
+  </aside><!-- Final Navbar lateral -->
 
-    <aside class="sidebar">
-        <div>
-          <img id="Logo" src="img/Logo Saberama navbarlateral.png" alt="Um Joystick com letras embaixo escrito Saberama">
+
+  <main>
+    <header>
+      <h2>Bem-vindo de volta, Ellen!</h2>
+      <h3>Materia principais:</h3>
+
+
+      <section class="subjects">
+
+        <div class="e-card playing">
+          <div class="wave blue"></div>
+          <div class="wave blue"></div>
+          <div class="wave blue"></div>
+          <div class="infotop">
+            <span class="progress">38%</span>
+            <p class="separacao">Matematica</p>
+          </div>
         </div>
-        <nav class="nav-links">
-            <a href="materia.html">
-                <img  src="img/Icones direto do figma/livros 1.png" alt="">
-                <span>Materias</span>
-            </a>
-            <a href="#Missao">
-                <img " src="img/Icones direto do figma/Alvo.png" alt="">
-                <span>Missões</span>
-            </a>
-            <a href="sons.html">
-                <img  src="img/Icones direto do figma/Boca.png" alt="">
-                <span>Sons</span>
-            </a>
-            <a href="perfil.html">
-                <img  src="img/Icones direto do figma/Perfil.png" alt="">
-                <span>Perfil</span>
-            </a>
-            <a href="#Ajustes">
-                <img src="img/Icones direto do figma/engrenagem.png" alt="">
-                <span>Ajustes</span>
-            </a>
-        </nav>
-      </aside><!-- Final Navbar lateral -->
 
-<div class="main-content">
-    <div  class="materia">
-    <h2>Matéria selecionada: Matemática</h2>
-    <button class="audio-button">
-        🔊</button>
-    </div>
+        <div class="e-card playing">
+          <div class="wave pink"></div>
+          <div class="wave pink"></div>
+          <div class="wave pink"></div>
 
-    <div class="mascote">
-        <img src="img/macote.png" alt="">
-        <button class="audio-materia">🔊</button>
-        <div class="explicacao">Nessa matéria iremos abordar os seguintes tópicos. Selecione qual você quer estudar.</div>
-    </div>
+          <div class="infotop">
+            <span class="progress">50%</span>
+            <p class="separacao">Portugues</p>
+          </div>
+        </div>
 
-    <div class="topicos">
-        <a href="#"  class="numeros-reais">
-            <button class="audio-topicos">🔊</button> Números Reais
-        </a>
-        <a href="" class="numeros-racionais" >
-            <button class="audio-topicos">🔊</button> Números Reais
-        </a>
-        <a href="" class="numeros-naturais" >
-            <button class="audio-topicos">🔊</button> Números Naturais
-        </a>
-        <a href="" class="numeros-romanos" >
-            <button class="audio-topicos">🔊</button> Números Romanos
-        </a>
-        <a href="" class="unidade-medias" >
-            <button class="audio-topicos">🔊</button> Unidade de medidas
-        </a>
-        <a href="" class="soma" >
-            <button class="audio-topicos">🔊</button> Soma
-        </a>
-    </div>
-</div>
+        <div class="e-card playing">
+          <div class="wave verde"></div>
+          <div class="wave verde"></div>
+          <div class="wave verde"></div>
+          <div class="infotop">
+            <span class="progress">15%</span>
+            <p class="separacao">Geografia</p>
+      </section>
+      </div>
+      </div>
+
+
+
+      <h3>Complementares:</h3>
+    </header>
+
+    <section class="subjects">
+
+      <div class="e-card playing">
+        <div class="wave roxo"></div>
+        <div class="wave roxo"></div>
+        <div class="wave roxo"></div>
+        <div class="infotop">
+          <span class="progress">38%</span>
+          <p class="separacao">Artes</p>
+        </div>
+      </div>
+
+      <div class="e-card playing">
+        <div class="wave amarelo"></div>
+        <div class="wave amarelo"></div>
+        <div class="wave amarelo"></div>
+        <div class="infotop">
+          <span class="progress">70%</span>
+          <p class="separacao">Historia</p>
+
+        </div>
+      </div>
+      <div class="e-card playing">
+        <div class="wave laranja"></div>
+        <div class="wave laranja"></div>
+        <div class="wave laranja"></div>
+        <div class="infotop">
+          <span class="progress">5%</span>
+          <p class="separacao">Educacao Fisica</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
 </body>
+
 </html>

@@ -2,20 +2,22 @@
     margin: 0;
     padding: 0;
     font-family: Poppins, sans-serif;
-    
 }
+
 #nav_bar{
-    height: 400px;
+    height: 650px;
     width: 100%;
     background-color: #6F00FF;
     color: white;
    
 }
+
 ul{
     display: flex;
     justify-content: end;
     margin-right: 50px;
 }
+
 li{
     padding-top: 15px;
     padding-left: 20px;
@@ -24,6 +26,7 @@ li{
     text-align: center;
     justify-content: center;
 }
+
 #dialogo_um{
     position: absolute;
     height: 200px;
@@ -33,10 +36,26 @@ li{
     border-radius: 30px;
     margin-left: 350px;
     border-bottom-left-radius: 0;
+    top: 200px;
 }
+
+#dialogo_um p{
+    color: black;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 5px;
+    font-size: 22px;
+}
+
 #livro_cap{
-    margin-top: 90px;
+    margin-top: 5%;
 }
+
+.div-livro-cap{
+    padding-top: 15%;
+}
+
 #container{
     display: flex;
     justify-content: end;
@@ -49,6 +68,7 @@ li{
    margin-top: 80px;
    color: rgba(0, 0, 0, 0.712);
    line-height: 30px;
+   font-size: 15px;
    
 }
 .sobre{
@@ -68,28 +88,63 @@ li{
     justify-content: center;
     align-items: center;
 }
+
+.p-matematica{
+ color: #FF3F00;
+}
+
+.p-portugues{
+ color: #41A650;
+}
+
+.p-geografia{
+ color: #6F00FF;
+}
+
+.nossas-materias{
+    font-size: 30px;
+    padding-left: 20px;
+    color: #4A0081;
+}
+
 .cont_materias{
     margin-left: 60px;
     height: 160px;
     width: 350px;
     border-radius: 15px;
     background-color: white;
-    transition: all 1s;
-    
+    transition: all 1s;   
+}
+
+.cont_materias p{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px;
+    font-size: 30px;
 }
 
 #section_game{
     height: 500px;
     display: flex;
     align-items: center;
+    padding-top: 5%;
 }
-#exemplo_game{
-    height: 370px;
+.exemplo_game{
+    position: relative;
+    height: 500px;
     width: 350px;
     margin-left: 120px;
     border-radius: 15px;
     background-color: rgb(163, 163, 163);
 }
+
+.imagem-fundo{
+    width: 100%;
+    height: 100%;
+}
+
+
 #game_img{
     position: absolute;
     height: 250px;
@@ -105,4 +160,78 @@ li{
     margin-top: -250px;
     border-radius: 20px;
     border-bottom-left-radius: 0px;
+}
+
+.roda-pe {
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    border-top: 3px solid black;
+    text-align: center;
+  }
+  
+  .roda-pe table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    color: #6F00FF;
+    font-size: 16px;
+  }
+  
+  .roda-pe th {
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 2px solid #fafafa;
+    text-align: left;
+  }
+  
+  .roda-pe td {
+    padding: 10px;
+    border-bottom: 1px solid #fafafa;
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .roda-pe table {
+      width: 100%;
+    }
+  
+    .roda-pe th, .roda-pe td {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
+.conteudo-rodape{
+    padding-left: 60px;
+    padding-top: 50px;
+}
+
+pre{
+    font-size: 20px;
+}
+
+.divisao {
+    border-bottom: solid 0.5px black;
+    width: 100%;
+    height: 10px;
+    padding-bottom: 50px;
+}
+
+.editar-botao{
+    background-color: #6591CB;
+    width: 12%;
+    height: 15%;
+    border-radius: 10%;
+    color: white;
+}
+
+.incones-home{
+    padding: 20px;
+}
+
+.logo-home{
+    padding-left: 50%;
 }

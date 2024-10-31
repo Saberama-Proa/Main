@@ -1,132 +1,175 @@
 <!DOCTYPE html>
-<html lang="pt_br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SABERAMA</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Saberama - Missões</title> 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css"> 
 </head>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-</style>
-
 <body>
-<div class="main">
-    <div id="nav_bar">
-
-        <ul>
-            <li class="incones-home"><img src="img/Login.png" alt=""></li>
-            <a href="login.html">
-                <li><img src="img/Home.png" alt=""></li>
-            </a>
-
-        </ul>
-
-        <div id="dialogo_um">
-            <p>Ola, bem vindo ao Saberama...
-                Uma plataforma de reforço gamificado para estudantes de EJA, venha aprender com os nossos jogos!</p>
+    <div class="sidebar">
+        <div class="logo">
+            <img id="Logo" src="img/" alt="Logo Saberama">
         </div>
-
-        <div class="div-livro-cap">
-            <img id="livro_cap" src="img/livro.png" alt="">
+        <div class="item-menu">
+            <img src="img/materias.png" alt="Ícone Matérias">
+            <span>matérias</span>
         </div>
-    </div>
-
-
-    <div id="container">
-
-        <div id="sobre_nos">
-            <h2 class="sobre"><strong>SOBRE </strong><strong id="S_nos">NÓS</strong></h2>
-            <pre>                 Vou te contar um pouco sobre a nossa missão, 
-                 Proporcionar uma plataforma
-                 acessível e interativa de reforço escolar,
-                 voltada para o público da...</pre>
+        <div class="item-menu ativo">
+            <img src="img/missoes.png" alt="Ícone Missões">
+            <span>Missões</span>
         </div>
-
-
-
-    </div>
-    <p class="nossas-materias"><b>Nossas Materias</b></p>
-    <div id="cont">
-        <div class="cont_materias">
-            <p class="p-matematica"><b>matematica</b></p>
+        <div class="item-menu">
+            <img src="img/jogos.png" alt="Ícone Jogos">
+            <span>Jogos</span>
         </div>
-        <div class="cont_materias">
-            <p class="p-portugues"><b>portugues</b></p>
+        <div class="item-menu">
+            <img src="img/sons.png" alt="Ícone Sons">
+            <span>Sons</span>
         </div>
-        <div class="cont_materias">
-            <p class="p-geografia"><b>geografia</b></p>
+        <div class="item-menu">
+            <img src="img/perfil.png" alt="Ícone Perfil">
+            <span>Perfil</span>
+        </div>
+        <div class="item-menu">
+            <img src="img/Conf.png" alt="Ícone Ajustes">
+            <span>Ajustes</span>
         </div>
     </div>
 
-    <div id="section_game">
-
-        <div class="exemplo_game">
-            <img src="img/CaçaPalavra.PNG" alt="imagem de fundo" class="imagem-fundo">
+    <div class="secao-missoes">
+        <h1>Diária</h1>
+        <div class="dropdown">
+            <img src="img/seta.png" alt="Seta" class="seta" onclick="toggleDropdown('diaria')">
+            <span class="titulo-dropdown">Atividades Diárias</span>
+        </div>
+        <div class="missao-diaria" id="diaria" style="display: none;">
+            <div class="missao">
+                <span class="icone">📐</span>
+                <div class="missao-info">
+                    <span>Atividades de matemática</span>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-bar-fill" style="width: 30%;"></div> 
+                        </div>
+                        <span>3/10</span>
+                    </div>
+                </div>
+            </div>
+            <div class="missao">
+                <span class="icone">📘</span>
+                <div class="missao-info">
+                    <span>Atividades de português</span>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-bar-fill" style="width: 90%;"></div>
+                        </div>
+                        <span>9/10</span>
+                    </div>
+                </div>
+            </div>
+            <div class="missao">
+                <span class="icone">📜</span>
+                <div class="missao-info">
+                    <span>Atividades de História</span>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-bar-fill" style="width: 50%;"></div>
+                        </div>
+                        <span>5/10</span>
+                    </div>
+                </div>
+            </div>
+            <div class="missao">
+                <span class="icone">🌎</span>
+                <div class="missao-info">
+                    <span>Atividades de Geografia</span>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-bar-fill" style="width: 20%;"></div> 
+                        </div>
+                        <span>2/10</span>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <img id="game_img" src="img/livro.png" alt="">
+        <h1>Semanal</h1>
+        <div class="dropdown">
+            <img src="img/seta.png" alt="Seta" class="seta" onclick="toggleDropdown('semanal')">
+            <span class="titulo-dropdown">Atividades Semanais</span>
+        </div>
+        <div class="missao-semanal" id="semanal" style="display: none;">
+            <h2>Semana 01:</h2>
+            <div class="missao">
+                <span class="icone">📐</span>
+                <div class="missao-info">
+                    <span>Atividades de matemática</span>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-bar-fill" style="width: 100%;"></div> 
+                        </div>
+                        <span>1/1</span>
+                    </div>
+                </div>
+            </div>
 
-        <div id="talk_game"></div>
-        <button class="editar-botao"><b>Comece Agora</b></button>
+            <h2>Semana 02:</h2>
+            <div class="missao">
+                <span class="icone">📘</span>
+                <div class="missao-info">
+                    <span>Atividades de português</span>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-bar-fill" style="width: 0%;"></div> 
+                        </div>
+                        <span>0/1</span>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Semana 03:</h2>
+            <div class="missao">
+                <span class="icone">📜</span>
+                <div class="missao-info">
+                    <span>Atividades de História</span>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-bar-fill" style="width: 0%;"></div> 
+                        </div>
+                        <span>0/1</span>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Semana 04:</h2>
+            <div class="missao">
+                <span class="icone">🌎</span>
+                <div class="missao-info">
+                    <span>Atividades de Geografia</span>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-bar-fill" style="width: 0%;"></div> 
+                        </div>
+                        <span>0/1</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="divisao"></div>
-    <div class="roda-pe">
-        <footer>
-            <table>
-                <tr>
-                    <th>Quem Somos</th>
-                    <th>Produtos</th>
-                    <th>Ajuda e Suporte</th>
-                    <th>Termos e privacidade</th>
-                </tr>
-                <tr>
-                    <td class="conteudo-rodape">Curso</td>
-                    <td>Saberama</td>
-                    <td>Dúvidas: Saberama</td>
-                    <td>Normas da Comunidade</td>
-                </tr>
-                <tr>
-                    <td>Missão</td>
-                    <td>Jogos para Aprendizado</td>
-                    <td>Dúvidas Jogos</td>
-                    <td>Termos de Uso</td>
-                </tr>
-                <tr>
-                    <td>Método</td>
-                    <td>Quem somos</td>
-                    <td>Status</td>
-                    <td>Privacidade</td>
-                </tr>
-                <tr>
-                    <td>Equipe</td>
-                    <td></td>
-                    <td></td>
-                    <th>Redes sociais</th>
-                </tr>
-                <tr>
-                    <td>Pesquisa</td>
-                    <td></td>
-                    <td></td>
-                    <td>Blog</td>
-                </tr>
-                <tr>
-                    <td>Carreira</td>
-                    <td></td>
-                    <td></td>
-                    <td>Instagram</td>
-                </tr>
-                <tr>
-                    <td>Quem Somos</td>
-                    <td></td>
-                    <td></td>
-                    <td>YouTube</td>
-                </tr>
-            </table>
-        </footer>
-    </div>
-</div>
+
+    <script>
+        function toggleDropdown(id) {
+            const element = document.getElementById(id);
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
 </body>
-
 </html>

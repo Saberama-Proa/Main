@@ -7,15 +7,16 @@
 body {
     display: flex;
     font-family: Arial, sans-serif;
-    color: #FFFFFF;
 }
 
-
-
-main {
-    flex-grow: 1;
-    padding: 40px;
+.content {
+    display: flex; /* Usando Flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Para alinhar os itens na vertical */
+    margin-left: 50px;
 }
+
 
 header h2 {
     font-size: px;

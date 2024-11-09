@@ -1,6 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
 
+#dark-mode {
+    display: none;
+  }
+  
+  label[for="dark-mode"] {
+    cursor: pointer;
+    width: 50px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 50px;
+    position: fixed; 
+    top: 20px; 
+    right: 20px; 
+    transition: background-color 0.3s;
+    display: inline-block;
+    z-index: 1000; /
+  }
+  
+  label[for="dark-mode"]::before {
+    content: "";
+    width: 21px;
+    height: 21px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s;
+  }
+  
+  #dark-mode:checked + label[for="dark-mode"] {
+    background-color: #333;
+  }
+  
+  #dark-mode:checked + label[for="dark-mode"]::before {
+    transform: translateX(25px);
+  }
+  
+  /* Tema claro*/
+  body {
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Tema escuro */
+  body.dark-mode {
+    background-color: #222;
+    color: #fff;
+  }
+  
+  /*mudar o fundo de outros elementos */
+  body.dark-mode .background {
+    background-color: #333;
+  }
+  
+  body.dark-mode .sidebar {
+    background-color: #444;
+  }
+  
+  body.dark-mode .nav-links {
+    background-color: #555;
+  }
+
 
 *{
     padding: 0;

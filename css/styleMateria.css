@@ -77,7 +77,7 @@ body {
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
     flex-direction: column; /* Para alinhar os itens na vertical */
-    margin-left: 50px;
+    margin-left: 300px;
 }
 
 

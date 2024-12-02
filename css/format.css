@@ -9,16 +9,13 @@
 body {
     height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
     
 }
 
 .container {
     display: flex;
     gap: 40px;
-    margin-left: 253px;
+    margin-left: 18vh;
     width: 100%;
     background: rgb(243, 243, 243);
     padding: 20px;

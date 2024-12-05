@@ -26,7 +26,13 @@
   align-items: center;
   text-transform: uppercase;
   position: relative;
+  transition: 0.5s ease-in-out;
 
+}
+
+.matematica.active{
+ background-color: #007bff;
+ color: #7B1FA2 ;
 }
 
 .matematica::after {

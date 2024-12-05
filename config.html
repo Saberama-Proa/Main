@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preferências</title>
+    <title>Ajustes</title>
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     
      <link rel="stylesheet" href="css/styleNavLateral.css"> <!--Navbar lateral -->
@@ -48,9 +49,9 @@
                 <h3>Visual</h3>
                 <div class="suspenso">
                     <label>Tema</label>
-                    <select>
-                        <option>Modo claro</option>
-                        <option>Modo escuro</option>
+                    <select id="themeSelector">
+                        <option class="modoClaro" value="light">Modo claro</option>
+                        <option class="modoEscuro" value="dark">Modo escuro</option>
                     </select>
                 </div>
                 <div class="suspenso">
@@ -80,7 +81,7 @@
             </div>
         </section>
     </div>
-
+    <script src="tema.js" defer></script>
 
 
     

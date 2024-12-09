@@ -147,5 +147,9 @@ label {
   left: -2%;
 }
 
-
-
+/* Remover o ícone de senha */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-webkit-contacts-auto-fill-button,
+input[type="password"]::-webkit-input-placeholder {
+  display: none;
+}

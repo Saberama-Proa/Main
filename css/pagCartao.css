@@ -83,16 +83,15 @@ body {
 }
 
 .label .title {
-    padding: 0 10px;
-    transition: all 300ms;
-    font-size: 12px;
+    font-size: 14px;
     color: #8b8e98;
     font-weight: 600;
-    width: fit-content;
-    top: 14px;
-    position: relative;
+    position: absolute;
     left: 15px;
-    background: #ffffff00;
+    top: -10px; 
+    background: #f0b4ff; 
+    padding: 0 5px; 
+    transition: all 300ms;
 }
 
 .input-field {

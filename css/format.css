@@ -15,8 +15,8 @@ body {
 .container {
     display: flex;
     gap: 40px;
-    margin-left: 18vh;
-    width: 100%;
+    margin-left: 27vh;
+    width: 189vh;
     padding: 20px;
     overflow: auto;
     

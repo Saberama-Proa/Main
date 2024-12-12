@@ -6,50 +6,9 @@
 }
 
 body {
-    margin-left:20vh;
+    margin-left:25vh;
     min-height: 100vh;
     background-color: #ffffff; /* Cor de fundo da página */
-}
-
-/* Estilo da Barra Lateral */
-.barra-lateral {
-    width: 250px; /* Largura da barra lateral */
-    background-color: #e9e7e7; /* Cor de fundo da barra lateral */
-    display: flex;
-    flex-direction: column; /* Itens empilhados verticalmente */
-    align-items: center; /* Centraliza itens horizontalmente */
-    padding: 20px 0; /* Espaçamento vertical */
-    border-radius: 50px; /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(163, 5, 206, 0.623); /* Sombra da barra lateral */
-}
-/* Estilo dos Itens do Menu */
-.item-menu {
-    width: 100%; /* Largura total do item do menu */
-    padding: 50px 0; /* Espaçamento interno */
-    display: flex;
-    align-items: center; /* Centraliza itens verticalmente */
-    justify-content: center; /* Centraliza itens horizontalmente */
-    flex-direction: column; /* Itens empilhados verticalmente */
-    color: #070707; /* Cor do texto */
-    font-size: 14px; /* Tamanho da fonte */
-    cursor: pointer; /* Cursor pointer para indicar interatividade */
-    transition: background 0.3s; /* Transição suave para o fundo */
-}
-.item-menu img {
-    width: 30px; /* Largura do ícone */
-    height: 24px; /* Altura do ícone */
-    margin-bottom: 10px; /* Espaçamento abaixo do ícone */
-}
-
-.item-menu.ativo {
-    background-color: #cecece; /* Cor de fundo do item ativo */
-    border-radius: 8px; /* Bordas arredondadas para o item ativo */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para o item ativo */
-}
-
-.item-menu:hover {
-    background-color: #7123cae3; /* Cor de fundo ao passar o mouse */
-    color: white; /* Cor do texto ao passar o mouse */
 }
 
 /* Estilo da Seção das Missões */
